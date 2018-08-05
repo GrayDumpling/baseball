@@ -105,10 +105,10 @@ baseball_data = list(N = nrow(data_2012_AB_subset),
                      # S2 = 0.001,
                      # R2 = 0.001)
 
-bootstrap_num = 100
+bootstrap_num = 50
 # posterior_mean_for_mu=c()
 for (i in 1:bootstrap_num) {
-  bootstrap_indices = 1:nrow(data_2012_AB_subset)# sample(1:nrow(data_2012_AB_subset), nrow(data_2012_AB_subset), TRUE)
+  bootstrap_indices = sample(1:nrow(data_2012_AB_subset), nrow(data_2012_AB_subset), TRUE)
   baseball_data = list(N = nrow(data_2012_AB_subset),
                        M = length(pp_names_subset),
                        AB = data_2012_AB_subset$AB[bootstrap_indices],
@@ -122,7 +122,7 @@ for (i in 1:bootstrap_num) {
             iter = 200000, chains = 1)
   print(paste("Iteration", i,  "times used:", sum(get_elapsed_time(fit))))
   write(summary(fit, "mu", probs=c())$summary[,"mean"],
-        append=TRUE, file="posterior_mean_for_mu_1")
+        append=TRUE, file="posterior_mean_for_mu")
 }
 # save.image(file="output.RData")
 # bootstrap_sd = var(posterior_mean_for_mu)
