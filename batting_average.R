@@ -119,7 +119,7 @@ baseball_data = list(N = nrow(data_2012_AB_subset),
                        S = 0.001,
                        R = 0.001)
   fit <- stan(file = 'baseball_simper.stan', data = baseball_data, 
-            iter = 1000, chains = 1)
+            iter = 100000, chains = 1)
 #   print(paste("Iteration", i,  "times used:", sum(get_elapsed_time(fit))))
 #   posterior_mean_for_mu<-c(posterior_mean_for_mu, summary(fit, "mu", probs=c())$summary[,"mean"])
 # }
