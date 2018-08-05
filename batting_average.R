@@ -119,28 +119,28 @@ for (i in 1:bootstrap_num) {
                        S = 0.001,
                        R = 0.001)
   fit <- stan(file = 'baseball_simper.stan', data = baseball_data, 
-            iter = 100000, chains = 1)
+            iter = 200000, chains = 1)
   print(paste("Iteration", i,  "times used:", sum(get_elapsed_time(fit))))
   write(summary(fit, "mu", probs=c())$summary[,"mean"],
-        append=TRUE, file="posterior_mean_for_mu")
+        append=TRUE, file="posterior_mean_for_mu_1")
 }
-save.image(file="output.RData")
+# save.image(file="output.RData")
 # bootstrap_sd = var(posterior_mean_for_mu)
 # 
 # get_elapsed_time(fit)
 # Calculate Var(X) at theta = theta_mle.
-V_mle = diag(data_2012_AB_subset$AB *
-               (data_2012_AB_subset$H/data_2012_AB_subset$AB) *
-               (1-data_2012_AB_subset$H/data_2012_AB_subset$AB))
-
-
-#Calculate frequentest sd and add to posterior_summary_mu
-posterior_summary_mu = data.frame(summary(fit, "mu", probs=c())$summary)
-for (par in rownames(posterior_summary_mu)) {
-  posterior_summary_mu[par, "sdfreq"] = freqacc(tt=extract(fit, par)[[1]],
-                                             aa=extract(fit)$theta,
-                                             V=V_mle)["sdfreq"]
-}
+# V_mle = diag(data_2012_AB_subset$AB *
+#                (data_2012_AB_subset$H/data_2012_AB_subset$AB) *
+#                (1-data_2012_AB_subset$H/data_2012_AB_subset$AB))
+# 
+# 
+# #Calculate frequentest sd and add to posterior_summary_mu
+# posterior_summary_mu = data.frame(summary(fit, "mu", probs=c())$summary)
+# for (par in rownames(posterior_summary_mu)) {
+#   posterior_summary_mu[par, "sdfreq"] = freqacc(tt=extract(fit, par)[[1]],
+#                                              aa=extract(fit)$theta,
+#                                              V=V_mle)["sdfreq"]
+# }
 
 # 
 # # Plot a bar plot for sdfreq and sdbayes
