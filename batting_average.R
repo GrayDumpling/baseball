@@ -105,9 +105,9 @@ baseball_data = list(N = nrow(data_2012_AB_subset),
                      # S2 = 0.001,
                      # R2 = 0.001)
 
-# bootstrap_num = 1
+bootstrap_num = 100
 # posterior_mean_for_mu=c()
-# for (i in 1:bootstrap_num) {
+for (i in 1:bootstrap_num) {
   bootstrap_indices = 1:nrow(data_2012_AB_subset)# sample(1:nrow(data_2012_AB_subset), nrow(data_2012_AB_subset), TRUE)
   baseball_data = list(N = nrow(data_2012_AB_subset),
                        M = length(pp_names_subset),
@@ -120,26 +120,28 @@ baseball_data = list(N = nrow(data_2012_AB_subset),
                        R = 0.001)
   fit <- stan(file = 'baseball_simper.stan', data = baseball_data, 
             iter = 100000, chains = 1)
-#   print(paste("Iteration", i,  "times used:", sum(get_elapsed_time(fit))))
-#   posterior_mean_for_mu<-c(posterior_mean_for_mu, summary(fit, "mu", probs=c())$summary[,"mean"])
-# }
+  print(paste("Iteration", i,  "times used:", sum(get_elapsed_time(fit))))
+  write(summary(fit, "mu", probs=c())$summary[,"mean"],
+        append=TRUE, file="posterior_mean_for_mu")
+}
 save.image(file="output.RData")
 # bootstrap_sd = var(posterior_mean_for_mu)
 # 
 # get_elapsed_time(fit)
-# # Calculate Var(X) at theta = theta_mle.
-# V_mle = diag(data_2012_AB_subset$AB *  
-#                (data_2012_AB_subset$H/data_2012_AB_subset$AB) * 
-#                (1-data_2012_AB_subset$H/data_2012_AB_subset$AB))
-# posterior_summary_mu = data.frame(summary(fit, "mu", probs=c())$summary)
-# 
-# #Calculate frequentest sd and add to posterior_summary_mu
-# for (par in rownames(posterior_summary_mu)) {
-#   posterior_summary_mu[par, "sdfreq"] = freqacc(tt=extract(fit, par)[[1]], 
-#                                              aa=extract(fit)$theta, 
-#                                              V=V_mle)["sdfreq"]
-# }
-# 
+# Calculate Var(X) at theta = theta_mle.
+V_mle = diag(data_2012_AB_subset$AB *
+               (data_2012_AB_subset$H/data_2012_AB_subset$AB) *
+               (1-data_2012_AB_subset$H/data_2012_AB_subset$AB))
+
+
+#Calculate frequentest sd and add to posterior_summary_mu
+posterior_summary_mu = data.frame(summary(fit, "mu", probs=c())$summary)
+for (par in rownames(posterior_summary_mu)) {
+  posterior_summary_mu[par, "sdfreq"] = freqacc(tt=extract(fit, par)[[1]],
+                                             aa=extract(fit)$theta,
+                                             V=V_mle)["sdfreq"]
+}
+
 # 
 # # Plot a bar plot for sdfreq and sdbayes
 # pp_sds = t(as.matrix(posterior_summary_mu[, c("sdfreq", "sd")]))
