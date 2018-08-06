@@ -1,0 +1,1059 @@
+Loading required package: ggplot2
+Loading required package: StanHeaders
+rstan (Version 2.17.3, GitRev: 2e1f913d3ca3)
+For execution on a local, multicore CPU with excess RAM we recommend calling
+options(mc.cores = parallel::detectCores()).
+To avoid recompilation of unchanged Stan programs, we recommend calling
+rstan_options(auto_write = TRUE)
+[1] 1 7 4 3 5 8 2 6 9
+pp
+  1   2   3   4   5   6   7   8   9 
+712 113  90  83  85  69 115  68  73 
+       pitcher        catcher  first baseman second baseman  third baseman 
+         "G_p"          "G_c"         "G_1b"         "G_2b"         "G_3b" 
+     shortstop   left fielder center fielder  right fielder 
+        "G_ss"         "G_lf"         "G_cf"         "G_rf" 
+
+  1 
+334 
+       pitcher        catcher  first baseman second baseman  third baseman 
+         "G_p"          "G_c"         "G_1b"         "G_2b"         "G_3b" 
+     shortstop   left fielder center fielder  right fielder 
+        "G_ss"         "G_lf"         "G_cf"         "G_rf" 
+[1] 334
+In file included from /share/software/user/open/r-rstan/2.17.3/BH/include/boost/config.hpp:39:0,
+                 from /share/software/user/open/r-rstan/2.17.3/BH/include/boost/math/tools/config.hpp:13,
+                 from /share/software/user/open/r-rstan/2.17.3/StanHeaders/include/stan/math/rev/core/var.hpp:7,
+                 from /share/software/user/open/r-rstan/2.17.3/StanHeaders/include/stan/math/rev/core/gevv_vvv_vari.hpp:5,
+                 from /share/software/user/open/r-rstan/2.17.3/StanHeaders/include/stan/math/rev/core.hpp:12,
+                 from /share/software/user/open/r-rstan/2.17.3/StanHeaders/include/stan/math/rev/mat.hpp:4,
+                 from /share/software/user/open/r-rstan/2.17.3/StanHeaders/include/stan/math.hpp:4,
+                 from /share/software/user/open/r-rstan/2.17.3/StanHeaders/include/src/stan/model/model_header.hpp:4,
+                 from file142b66cd190ac.cpp:8:
+/share/software/user/open/r-rstan/2.17.3/BH/include/boost/config/compiler/gcc.hpp:186:0: warning: "BOOST_NO_CXX11_RVALUE_REFERENCES" redefined [enabled by default]
+ #  define BOOST_NO_CXX11_RVALUE_REFERENCES
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 852.4 seconds (Warm-up)
+               729.57 seconds (Sampling)
+               1581.97 seconds (Total)
+
+[1] "Iteration 1 times used: 1581.97"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 873.68 seconds (Warm-up)
+               688.53 seconds (Sampling)
+               1562.21 seconds (Total)
+
+[1] "Iteration 2 times used: 1562.21"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 807.28 seconds (Warm-up)
+               666.63 seconds (Sampling)
+               1473.91 seconds (Total)
+
+[1] "Iteration 3 times used: 1473.91"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 846.68 seconds (Warm-up)
+               520.47 seconds (Sampling)
+               1367.15 seconds (Total)
+
+[1] "Iteration 4 times used: 1367.15"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 877.87 seconds (Warm-up)
+               906.09 seconds (Sampling)
+               1783.96 seconds (Total)
+
+[1] "Iteration 5 times used: 1783.96"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 695.43 seconds (Warm-up)
+               596.57 seconds (Sampling)
+               1292 seconds (Total)
+
+[1] "Iteration 6 times used: 1292"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 761.14 seconds (Warm-up)
+               483.05 seconds (Sampling)
+               1244.19 seconds (Total)
+
+[1] "Iteration 7 times used: 1244.19"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 873.46 seconds (Warm-up)
+               1169.22 seconds (Sampling)
+               2042.68 seconds (Total)
+
+[1] "Iteration 8 times used: 2042.68"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 871.17 seconds (Warm-up)
+               476.26 seconds (Sampling)
+               1347.43 seconds (Total)
+
+[1] "Iteration 9 times used: 1347.43"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 839.41 seconds (Warm-up)
+               756.55 seconds (Sampling)
+               1595.96 seconds (Total)
+
+[1] "Iteration 10 times used: 1595.96"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 832.89 seconds (Warm-up)
+               1032.94 seconds (Sampling)
+               1865.83 seconds (Total)
+
+[1] "Iteration 11 times used: 1865.83"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 755.59 seconds (Warm-up)
+               2217.28 seconds (Sampling)
+               2972.87 seconds (Total)
+
+[1] "Iteration 12 times used: 2972.87"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 753.14 seconds (Warm-up)
+               1509.27 seconds (Sampling)
+               2262.41 seconds (Total)
+
+[1] "Iteration 13 times used: 2262.41"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 882.79 seconds (Warm-up)
+               1765.46 seconds (Sampling)
+               2648.25 seconds (Total)
+
+[1] "Iteration 14 times used: 2648.25"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 857.2 seconds (Warm-up)
+               930.28 seconds (Sampling)
+               1787.48 seconds (Total)
+
+[1] "Iteration 15 times used: 1787.48"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 875.23 seconds (Warm-up)
+               610.49 seconds (Sampling)
+               1485.72 seconds (Total)
+
+[1] "Iteration 16 times used: 1485.72"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 860.48 seconds (Warm-up)
+               807.35 seconds (Sampling)
+               1667.83 seconds (Total)
+
+[1] "Iteration 17 times used: 1667.83"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 823.84 seconds (Warm-up)
+               1419.63 seconds (Sampling)
+               2243.47 seconds (Total)
+
+[1] "Iteration 18 times used: 2243.47"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 771.24 seconds (Warm-up)
+               961.52 seconds (Sampling)
+               1732.76 seconds (Total)
+
+[1] "Iteration 19 times used: 1732.76"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 870.13 seconds (Warm-up)
+               1740.99 seconds (Sampling)
+               2611.12 seconds (Total)
+
+[1] "Iteration 20 times used: 2611.12"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 781.78 seconds (Warm-up)
+               609.91 seconds (Sampling)
+               1391.69 seconds (Total)
+
+[1] "Iteration 21 times used: 1391.69"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 829.32 seconds (Warm-up)
+               403.12 seconds (Sampling)
+               1232.44 seconds (Total)
+
+[1] "Iteration 22 times used: 1232.44"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 871.11 seconds (Warm-up)
+               1336.77 seconds (Sampling)
+               2207.88 seconds (Total)
+
+[1] "Iteration 23 times used: 2207.88"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 762.98 seconds (Warm-up)
+               582.55 seconds (Sampling)
+               1345.53 seconds (Total)
+
+[1] "Iteration 24 times used: 1345.53"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 886.65 seconds (Warm-up)
+               5124.63 seconds (Sampling)
+               6011.28 seconds (Total)
+
+[1] "Iteration 25 times used: 6011.28"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 688.66 seconds (Warm-up)
+               1261.4 seconds (Sampling)
+               1950.06 seconds (Total)
+
+[1] "Iteration 26 times used: 1950.06"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 690.53 seconds (Warm-up)
+               989.51 seconds (Sampling)
+               1680.04 seconds (Total)
+
+[1] "Iteration 27 times used: 1680.04"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 852.26 seconds (Warm-up)
+               1030.11 seconds (Sampling)
+               1882.37 seconds (Total)
+
+[1] "Iteration 28 times used: 1882.37"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 809.61 seconds (Warm-up)
+               973.5 seconds (Sampling)
+               1783.11 seconds (Total)
+
+[1] "Iteration 29 times used: 1783.11"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 857.52 seconds (Warm-up)
+               805.36 seconds (Sampling)
+               1662.88 seconds (Total)
+
+[1] "Iteration 30 times used: 1662.88"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 844.36 seconds (Warm-up)
+               623.48 seconds (Sampling)
+               1467.84 seconds (Total)
+
+[1] "Iteration 31 times used: 1467.84"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 880.24 seconds (Warm-up)
+               435.69 seconds (Sampling)
+               1315.93 seconds (Total)
+
+[1] "Iteration 32 times used: 1315.93"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 825.5 seconds (Warm-up)
+               702.35 seconds (Sampling)
+               1527.85 seconds (Total)
+
+[1] "Iteration 33 times used: 1527.85"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0.01 seconds
+1000 transitions using 10 leapfrog steps per transition would take 100 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 848 seconds (Warm-up)
+               768.96 seconds (Sampling)
+               1616.96 seconds (Total)
+
+[1] "Iteration 34 times used: 1616.96"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 836.17 seconds (Warm-up)
+               1014.86 seconds (Sampling)
+               1851.03 seconds (Total)
+
+[1] "Iteration 35 times used: 1851.03"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 850.62 seconds (Warm-up)
+               452.56 seconds (Sampling)
+               1303.18 seconds (Total)
+
+[1] "Iteration 36 times used: 1303.18"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 762.61 seconds (Warm-up)
+               1471.23 seconds (Sampling)
+               2233.84 seconds (Total)
+
+[1] "Iteration 37 times used: 2233.84"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 854.13 seconds (Warm-up)
+               570.44 seconds (Sampling)
+               1424.57 seconds (Total)
+
+[1] "Iteration 38 times used: 1424.57"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
+Iteration:  20000 / 200000 [ 10%]  (Warmup)
+Iteration:  40000 / 200000 [ 20%]  (Warmup)
+Iteration:  60000 / 200000 [ 30%]  (Warmup)
+Iteration:  80000 / 200000 [ 40%]  (Warmup)
+Iteration: 100000 / 200000 [ 50%]  (Warmup)
+Iteration: 100001 / 200000 [ 50%]  (Sampling)
+Iteration: 120000 / 200000 [ 60%]  (Sampling)
+Iteration: 140000 / 200000 [ 70%]  (Sampling)
+Iteration: 160000 / 200000 [ 80%]  (Sampling)
+Iteration: 180000 / 200000 [ 90%]  (Sampling)
+Iteration: 200000 / 200000 [100%]  (Sampling)
+
+ Elapsed Time: 675.11 seconds (Warm-up)
+               820.38 seconds (Sampling)
+               1495.49 seconds (Total)
+
+[1] "Iteration 39 times used: 1495.49"
+
+SAMPLING FOR MODEL 'baseball_simper' NOW (CHAIN 1).
+
+Gradient evaluation took 0 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+Adjust your expectations accordingly!
+
+
+Iteration:      1 / 200000 [  0%]  (Warmup)
