@@ -19,15 +19,20 @@ freqacc <- function(tt, aa, pp=rep(1,length(tt)), V, sw=0) {1
   ##    [if using bootstrap implementation], and the usual Bayes
   ##    estimate of standard deviation of Ebayes.  B.Efron 2/8/14
   
-  if (missing(V)) V <- solve(var(aa)) #only applies in bootstrap case.
-  B <- length(tt)
-  pp <- pp / sum(pp)
-  Ebayes <- sum(pp * tt) #Bayes posterior estimate
-  abar <- as.vector(pp %*% aa)
-  ttt <- tt - Ebayes; aaa <- t(t(aa) - abar)
-  sdbayes <- sum(pp * ttt^2)^.5
-  covhat <- ttt %*% (pp * aaa) #covhat as in (3.10)
-  sdfreq <- sqrt(covhat %*% V %*% t(covhat)) #as in (3.11) or Theorem 1
+  # if (missing(V)) V <- solve(var(aa)) #only applies in bootstrap case.
+  # B <- length(tt)
+  # pp <- pp / sum(pp)
+  # Ebayes <- sum(pp * tt) #Bayes posterior estimate
+  # abar <- as.vector(pp %*% aa)
+  # ttt <- tt - Ebayes; aaa <- t(t(aa) - abar)
+  # sdbayes <- sum(pp * ttt^2)^.5
+  # covhat <- ttt %*% (pp * aaa) #covhat as in (3.10)
+  # sdfreq <- sqrt(covhat %*% V %*% t(covhat)) #as in (3.11) or Theorem 1
+  # 
+  Ebayes = weighted.mean(tt, pp)
+  sdbayes = sd(tt)
+  covhat = cov(tt, aa)
+  sdfreq <- sqrt(covhat %*% V %*% t(covhat))
   
   if (var(pp) > 0) {#internal cv (3.12), from bootstrap resamples
     qq <- tt * pp; ss <- qq / mean(qq) - pp / mean(pp)
